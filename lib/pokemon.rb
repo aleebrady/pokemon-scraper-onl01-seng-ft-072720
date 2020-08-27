@@ -23,6 +23,7 @@ class Pokemon
     
     db.execute(sql, id).map do |row|
       self.new(row)
+    end.first
   end
   
 end
