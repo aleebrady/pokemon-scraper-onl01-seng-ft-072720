@@ -22,7 +22,7 @@ class Pokemon
    "Select * From pokemon Where id = ? Limit 1"
    
    db.execute(sql, id).map do |row|
-     self.new(row)
+     self.new(id: )
    end.first
   end
   
