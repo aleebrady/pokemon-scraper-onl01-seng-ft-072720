@@ -21,6 +21,8 @@ class Pokemon
     sql = 
     "Select * From pokemon Where id = ? Limit 1"
     
+    db.execute(sql, id).map do |row|
+      
   end
   
 end
