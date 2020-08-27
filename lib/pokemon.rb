@@ -10,7 +10,7 @@ class Pokemon
   end
   
   def self.save(name, type, db)
-    sql =  
+    sql = sql  
     "Insert Into pokemon(name, type) Values (?, ?)"
     
     db.execute(sql, name, type)
@@ -18,7 +18,7 @@ class Pokemon
   end
   
   def self.find(id, db)
-    sql = 
+    sql = sql
     "Select * From pokemon Where id = ? Limit 1"
     
     db.execute(sql, id).map do |row|
